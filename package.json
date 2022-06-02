@@ -10,7 +10,6 @@
   "scripts": {
     "prebuild": "rimraf dist coverage *.tgz",
     "build": "tsc -p tsconfig.build.json",
-    "postbuild": "node scripts/post-build.js",
     "pretest": "tsc -p tsconfig.spec.json --noEmit && node scripts/prepare-test.js",
     "test": "jest",
     "test-examples": "node scripts/test-examples.js",
